@@ -1,0 +1,31 @@
+main{
+    background-color: #201b2c;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color: white;
+    padding-bottom: 50px;
+}
+.opcoes{
+    width: 100%;
+    padding: 16px 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+a{
+    color: white;
+    cursor: pointer;
+}

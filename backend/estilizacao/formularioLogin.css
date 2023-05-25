@@ -1,0 +1,95 @@
+header{
+    padding-right: 40px;
+}
+h1{
+    font-size: 50px;
+    color: white;
+}
+img{
+    width: 100%;
+}
+main{
+    background-color: #201b2c;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 40px;
+}
+
+form{
+    width: 50%;
+    height: 100%;
+    padding: 30px 35px;
+    margin-top: 630px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 11pt;
+    box-shadow: 0px 10px 40px #00000056;
+}
+h2{
+    color: white;
+    padding-bottom: 20px;
+}
+label{
+    color: white;
+    padding-bottom: 10px;
+}
+.sexo{
+    text-align: left;
+}
+.sexo p{
+    color: white;
+    margin-bottom: 8px;
+}
+.botao-opcoes{
+    width: 100%;
+    font-size: 17px;
+    padding: 16px 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+}
+.botao-nav{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 690px) {
+    img{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+        padding-bottom: 35px;
+    }
+    form{
+        width: 100%;
+        margin-top: 450px;
+    }
+}

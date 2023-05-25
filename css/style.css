@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #D0E4AE;
+}
+
+/*Header Topo Principal*/
+
+.topo-principal,
+.email-desconto{
+    max-width: 1100px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(133, 133, 133);
+}
+.topo-principal h3 a{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #194B32;
+}
+.input-busca,
+.email-desconto-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button-busca,
+#email-desconto-enviar{
+    height: 25px;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: #c9c9c9;
+}
+.input-busca button,
+.email-desconto-enviar button{
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 6px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #93B4DB;
+}
+.input-busca button:hover{
+    opacity: 0.5;
+}
+.topo-principal-right nav a{
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+    font-weight: 600;
+}
+.topo-principal-right nav a:hover{
+    color: #93B4DB;
+    text-decoration: underline;
+}
+
+/*Header Topo Dois*/
+
+.menu-opcoes{
+    max-width: 1100px;
+    height: 30px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+.menu-opcoes nav{
+    display: flex;
+    justify-content:space-between;
+}
+.menu-opcoes nav a{
+    color: #194B32;
+    text-decoration: none;
+    font-weight: 600;
+}
+.menu-opcoes nav a:hover{
+    opacity: 0.5;
+}
+
+/* Banners principais */
+
+.banner{
+    height: calc(100vh - 120px);
+}
+#banner2{
+    margin-top: 20px;
+    background-image: url('../images/banner2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+#banner1{
+    background-image: url('../images/banner1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35px;
+}
+
+/*Main Principal*/
+
+.conteudo-principal{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.conteudo-principal .img{
+    width: 300px;
+    margin-bottom: 20px;
+}
+.conteudo-principal img{
+    width: 300px;
+    height: auto;
+    padding: 4px;
+    border-radius: 4px;
+    border: none;
+}
+.conteudo-principal p{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.conteudo-principal span{
+    color: #747474;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+.conteudo-principal h6{
+    font-weight: 550;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.conteudo-principal a{
+    text-decoration: none;
+    color: #194B32;
+    font-weight: 600;
+    background-color: #639e82;
+    padding: 8px;
+    border-radius: 8px;
+}
+.conteudo-principal a:hover{
+    opacity: 0.5;
+}
+.email-desconto{
+    border-top: 1px solid rgb(133, 133, 133);
+    justify-content: space-evenly;
+}
+.email-desconto p{
+    color: #747474;
+    margin-right: 60px;
+    text-transform: uppercase;
+    align-items: center;
+}
+.email-desconto p span{
+    font-weight: 700;
+    color: black;
+}
+
+/*Footer*/
+
+footer{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.social,
+.outfits,
+.ajuda{
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.social h3,
+.outfits h3,
+.ajuda h3{
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.social a,
+.outfits a,
+.ajuda a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: #548a71;
+    font-size: 15px;
+}
+.social a:hover,
+.outfits a:hover,
+.ajuda a:hover{
+    opacity: 0.5;
+}
+
+/*Pagina masculina*/
+
+.border-top-masculino,
+.border-top-feminino{
+    border-top: 1px solid rgb(133, 133, 133);
+}
+
+.direitos{
+    border-top: 1px solid rgb(133, 133, 133);
+    margin-bottom: 20px;
+}
+.direitos p{
+    margin-top: 20px;
+}
+
+@media (max-width: 720px) {
+    .topo-principal{
+        flex-direction: column;
+        margin-top: 20px;
+        height: 150px;
+    }
+    #banner1{
+        display: none;
+    }.banner{
+        height: auto;
+    }
+}
+
+@media (max-width: 810px){
+    .email-desconto{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .email-desconto p{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 490px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #banner2{
+        margin-top: 120px;
+    }
+    .menu-opcoes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-opcoes nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+        margin-top: 95px;
+    }
+}
